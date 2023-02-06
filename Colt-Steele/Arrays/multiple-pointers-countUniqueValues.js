@@ -20,10 +20,8 @@ const countUniqueValues = (arr) => {
       for (let i = 0; i < arr.length; i++) {
         let search = i;
         if (arr[start] !== arr[search]) {
-          // console.log('Before:', arr[start], arr[search], counter);
           arr[start] = arr[search];
           counter++;
-          console.log('After:', arr[start], arr[search], counter);
         }
       }
       return counter;
