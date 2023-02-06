@@ -11,6 +11,8 @@
 //  - Strs are the same length
 //  - Char from str2 are in lookup
 
+// Time Complexity: O(n) + Space complexity O(n)
+
 const validAnagram = (str1, str2) => {
 
     if (str1.length !== str2.length) {

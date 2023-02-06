@@ -5,7 +5,7 @@
 // same([1,2,3], [1,9])  // false
 // same([1,2,1], [4,4,1])  // false
 
-// Time Complexity: O(n^2)
+// Time Complexity: O(n^2) + Space complexity O(n)
 
 const same = (arr1, arr2) => {
     if (arr1.length !== arr2.length) {

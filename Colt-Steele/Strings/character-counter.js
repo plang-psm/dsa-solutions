@@ -11,6 +11,8 @@
         // else if not a letter/num return nothing
 // return obj at end
 
+// Time Complexity: O(n) + Space complexity O(1)
+
 const charCount = str => {
     let object = {}
 
@@ -21,8 +23,7 @@ const charCount = str => {
             object[ch] ? object[ch]++ : object[ch] = 1
         }
     }
-    console.log(object);
     return object
 }
 
-charCount('Your number is 1234')
+console.log(charCount('Your number is 1234'))
