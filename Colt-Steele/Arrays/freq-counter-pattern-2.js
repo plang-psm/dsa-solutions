@@ -26,7 +26,7 @@ const same = (arr1, arr2) => {
         if(!(num ** 2 in counter2)) {
             return false
         }
-        // If counter2[counter1 num (2) ** 2] is NOT equal to  counter 1 -> 2
+        // Checks the occurances of the number.
         if(counter1[num] !== counter2[num ** 2]){
             return false
         }
