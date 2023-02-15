@@ -8,13 +8,10 @@ const binarySearch = (arr, val) => {
     let right = arr.length - 1
     let middle = Math.floor((left + right) / 2)
     while (arr[middle] !== val && left <= right) {
-        // console.log('middle', arr[middle], 'val', val)
         if(val < arr[middle]) {
             right = middle - 1
-            // console.log('left', left)
         } else {
             left = middle + 1
-            // console.log('right', right)
         }
         middle = Math.floor((left + right) / 2)
     }
