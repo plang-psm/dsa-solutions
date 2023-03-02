@@ -1,16 +1,17 @@
 // Write a function called maxSubarraySum which accepts an array of integers and a number called n. The function should calculate the maximum sum of n consecutive elements in the array.
-
 // Nested loops
 
-const maxSubarraySum = (arr, num) => {
+//-----------------------------
   // set max = to lowest possible #
   // loop through the whole array - length of snap
   // loop through the snap and grab the sum [i + j]
   // temp = new snap
   // if temp > max set max
-
+  
+//-----------------------------
   // Time complexity O(n^2) + Space complexity O(n)
 
+const maxSubarraySum = (arr, num) => {
   if (num > arr.length) return null;
   let max = -Infinity;
   for (let i = 0; i < arr.length - num + 1; i++) {

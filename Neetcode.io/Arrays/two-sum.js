@@ -1,4 +1,4 @@
-var twoSum = function(nums, target) {
+const twoSum = function(nums, target) {
   // val:idx
     let map = {} // {'1':0, '2':1, }
     for(let i = 0; i<nums.length; i++) {
