@@ -19,32 +19,35 @@
 // Explanation: The last word is "joyboy" with length 6.
 
 //-----------------------------
-    // Set the first char occurence to false
-    // Start from the end of the string
-    // If it is not empty(there is a letter), 
-      // Set the first char occurence to false 
-      // Add 1
-    // If the first char occurence is false and the ch is empty
-      // Break
-  
-    // Return the ch count once we exit the for loop
+// Set the first char occurence to false
+// Start from the end of the string
+// If it is not empty(there is a letter), 
+  // Set the first char occurence to false 
+  // Add 1
+// If the first char occurence is false and the ch is empty
+    // Break
+// Return the ch count once we exit the for loop
 
 //-----------------------------
-// Time complexity:  + Space complexity: 
+// Time complexity: O(n) + Space complexity: O(1)
 
 const lengthOfLastWord = function (s) {
-    let firstChOccurance = false;
-    let lastStrLen = 0;
+  let firstChOccurance = false;
+  let lastStrLen = 0;
   
-    for (let i = s.length - 1; i > -1; i--) {
-      if (s[i] !== ' ') {
-        firstChOccurance = true;
-        lastStrLen++;
-      }
-      if (firstChOccurance && s[i] === ' ') {
-        break;
-      }
+  for (let i = s.length - 1; i > -1; i--) {
+    if (s[i] !== ' ') {
+      firstChOccurance = true;
+      lastStrLen++;
     }
-    return lastStrLen;
-  };
-  
+    if (firstChOccurance && s[i] === ' ') {
+      break;
+    }
+  }
+  return lastStrLen;
+};
+
+console.log(
+  lengthOfLastWord("Hello World"), // 5
+  lengthOfLastWord("   fly me   to   the moon  ") // 4
+)

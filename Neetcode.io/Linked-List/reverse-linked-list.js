@@ -20,7 +20,7 @@
 // return prev
 
 //-----------------------------
-// Time complexity:  + Space complexity: 
+// Time complexity: O(n) + Space complexity: O(1)
 
 const reverseList = function(head) {
     let current = head
