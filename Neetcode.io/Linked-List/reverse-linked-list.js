@@ -19,6 +19,9 @@
     // set current to next node and do again until exit
 // return prev
 
+//-----------------------------
+// Time complexity:  + Space complexity: 
+
 const reverseList = function(head) {
     let current = head
     let next = null
