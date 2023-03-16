@@ -2,6 +2,9 @@
 // Nested loops
 
 //-----------------------------
+
+
+//-----------------------------
   // set max = to lowest possible #
   // loop through the whole array - length of snap
   // loop through the snap and grab the sum [i + j]
