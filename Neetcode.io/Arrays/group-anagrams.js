@@ -42,3 +42,5 @@ const  groupAnagrams = function(strs) {
         });
     return values
 };
+
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"])) // [["bat"],["nat","tan"],["ate","eat","tea"]]
