@@ -31,21 +31,18 @@
 //-----------------------------
 // Time complexity: + Space complexity:
 
-
-  
-
 const longestConsecutive = function(nums) {
     if (!nums.length) return 0;
-    nums.sort((a, b) => a - b);/* Time O(N * log(N)) | Space O(1 || log(N)) */
+    nums.sort((a, b) => a - b);
 
-    return search(nums);       /* Time O(N) */
+    return search(nums);
 }
 
 const search = (nums) => {
-    let maxLength = 1
+    let maxLength = 1å
     let length = 1
 
-    for (let i = 1; i < nums.length; i++) {/* Time O(N) */
+    for (let i = 1; i < nums.length; i++) {/
         const isPrevDuplicate = nums[i - 1] === nums[i]
         if (isPrevDuplicate) continue
 
