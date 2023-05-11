@@ -20,6 +20,7 @@ const maxSubarraySum = (arr, num) => {
     max += arr[i];
   }
   let temp = max;
+  
   for (let i = num; i < arr.length; i++) {
     temp = temp - arr[i - num] + arr[i];
     if (temp > max) {
