@@ -20,7 +20,7 @@ function timeConversion(s) {
     let hour = s.slice(0, 2) 
     let min = s.slice(3, 5) 
     let sec = s.slice(6, 8) 
-    // console.log(amOrPm)
+    
     if(amOrPm === 'AM') {
         hour = '00'
     }
