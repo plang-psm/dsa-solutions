@@ -7,8 +7,6 @@
 // until we finish the loop
 // return in arr
 
-// Time Complexity: O(n) + Space complexity O(n)
-
 function matchingStrings(strings, queries) {
     let map = {}
 
