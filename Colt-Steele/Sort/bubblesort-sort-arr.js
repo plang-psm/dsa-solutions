@@ -17,16 +17,17 @@
 
 // Time Complexity: O(n^2) | Space Complexity: O(n)
 
-function sortArray(nums) {
-    for(let i = nums.length; i > 0; i--) {
-        let temp
-        for(let j = 0; j < i-1; i++) {
-            if(nums[j] > nums[j+1]) {
-                temp = nums[j]
-                nums[j] = nums[j+1]
-                nums[j+1] = temp
-            }
-        }
-    } console.log(nums)
+function bubbleSort(nums) {
+  for (let i = nums.length; i > 0; i--) {
+    let temp;
+    for (let j = 0; j < i - 1; i++) {
+      if (nums[j] > nums[j + 1]) {
+        temp = nums[j];
+        nums[j] = nums[j + 1];
+        nums[j + 1] = temp;
+      }
+    }
+  }
+  return nums;
 }
-console.log(sortArray(37, 29, 45, 8));
+console.log(bubbleSort(37, 29, 45, 8));

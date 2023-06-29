@@ -1,17 +1,13 @@
+// Extra Credit
+function bubbleSort(arr) {}
+
 function selectionSort(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    let min = i;
-    for (let j = i + 1; j < arr.length - 1; j++) {
-      if (arr[min] > arr[j]) {
-      }
-    }
-    if (i !== min) {
-      let temp = arr[i];
-      arr[i] = arr[min];
-      arr[min] = temp;
-    }
-  }
-  return arr;
+
 }
 
-selectionSort([33, 22, 10, 19, 17]);
+// function insertionSort(arr) {
+// }
+
+// console.log(bubbleSort([37, 29, 45, 8])); // 45, 37, 29, 8
+console.log(selectionSort([33, 22, 10, 19, 17])); // 10, 17, 19, 22, 32
+// console.log(insertionSort([37, 29, 45, 8, 25])); // 8, 25, 29, 37, 45
