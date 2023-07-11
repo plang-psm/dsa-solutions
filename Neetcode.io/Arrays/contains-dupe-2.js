@@ -25,7 +25,7 @@
 // exit loop - return false
 
 //-----------------------------
-//
+// TC: O(n)  | SC: O(n)
 
 const containsNearbyDuplicate = function (nums, k) {
   let hash = {};
