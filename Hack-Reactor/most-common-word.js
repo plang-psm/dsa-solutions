@@ -16,6 +16,8 @@
 
 // return mostFreq
 
+// Time Complexity: O(n) + Space complexity O(n)
+
 var mostCommonWord = function (paragraph, banned) {
   const newPar = paragraph.toLowerCase().match(/[a-z]+/g);
   let hash = {};
