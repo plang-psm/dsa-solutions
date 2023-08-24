@@ -3,14 +3,15 @@ function longestSubstringWK(s, k) {
     let maxLen = -Infinity;
     let uniqueCharsSeen = new Map(); // could be done with a primitive, but this was easiest
     let left = 0;
-    // let right = 0;
+    let right = 0;
 
-    for (let right = 0; right < s.length; right++) {
-        let letter = s[right];
+    for (let i = 0; i < s.length; i++) {
+        let letter = s[i];
         // increment windowEnd
         right++;
         // put letter in map
         map.set(letter, right);
+        console.log(map)
 
         uniqueCharsSeen.set(letter, right);
 
