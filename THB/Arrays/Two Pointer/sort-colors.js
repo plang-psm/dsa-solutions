@@ -1,5 +1,5 @@
 // for nums.length, left = i
-// let right = 0
+// let right = left + 1
 // while(right < nums.length) {
 //   if i > j -> swap
 // right++
